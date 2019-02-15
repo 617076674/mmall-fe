@@ -29,7 +29,7 @@ var _user = {
     //用户登录
     login: function(userInfo, resolve, reject){
         _mm.request({
-            url: _mm.getServerUrl('/user/user_login.do'),
+            url: _mm.getServerUrl('/user/login.do'),
             data: userInfo,
             method: 'POST',
             success: resolve,
@@ -52,6 +52,52 @@ var _user = {
             data: {
                 username: username
             },
+            method: 'POST',
+            success: resolve,
+            error: reject
+        });
+    },
+    //检查密码提示问题答案
+    checkAnswer: function(userInfo, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/user/forget_check_answer.do'),
+            data: userInfo,
+            method: 'POST',
+            success: resolve,
+            error: reject
+        });
+    },
+    resetPassword: function(userInfo, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/user/forget_reset_password.do'),
+            data: userInfo,
+            method: 'POST',
+            success: resolve,
+            error: reject
+        });
+    },
+    getUserInfo: function(resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/user/get_information.do'),
+            method: 'POST',
+            success: resolve,
+            error: reject,
+        });
+    },
+    updateUserInfo: function(userInfo, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/user/update_information.do'),
+            data: userInfo,
+            method: 'POST',
+            success: resolve,
+            error: reject
+        });
+    },
+    //登录状态下更新密码
+    updatePassword: function(userInfo, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/user/reset_password.do'),
+            data: userInfo,
             method: 'POST',
             success: resolve,
             error: reject

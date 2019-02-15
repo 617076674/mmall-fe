@@ -66,7 +66,7 @@ var _mm = {
         }
         //邮箱格式验证
         if('email' === type){
-            return /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/.test(value);
+            return /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/.test(value);
         }
     },
     //统一登录处理

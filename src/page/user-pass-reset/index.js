@@ -77,6 +77,26 @@ var page = {
                 _this.submit();
             }
         });
+        //输入新密码后的按钮点击
+        $('#submit-password').click(function(){
+            var password = $.trim($('#password').val());
+            if(password && password.length >= 6){
+                //密码不为空
+                //检查密码提示问题答案
+                _user.resetPassword({
+                    username: _this.data.username,
+                    passwordNew: password,
+                    forgetToken: _this.data.token
+                }, function(res){
+                    window.location.href = './result.html?type=pass-reset';
+                }, function(errMsg){
+                    formError.show(errMsg);
+                });
+            }else{
+                //密码为空
+                formError.show('请输入不少于6位的新密码');
+            }
+        });
     },
     //加载输入用户名的一步
     loadStepUsername: function(){
@@ -91,7 +111,10 @@ var page = {
     },
     //加载输入password的一步
     loadStepPassword: function(){
-        
+        //清除错误提示
+        formError.hide();
+        //做容器的切换
+        $('.step-question').hide().siblings('.step-password').show();
     }
 };
 
