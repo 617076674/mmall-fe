@@ -46,7 +46,7 @@ var config = {
     },
     output: {
         path        : __dirname + '/dist/',
-        publicPath  : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.happymmall.com/mmall-fe/dist/',
+        publicPath  : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.617076674.cn/mmall-fe/dist/',
         filename    : 'js/[name].js'
     },
     externals : {
@@ -102,11 +102,11 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('about', '关于MMall')),
     ],
     devServer: {
-        port: 8088,
+        port: 8080,
         inline: true,
         proxy : {
             '**/*.do' : {
-                target: 'http://test.happymmall.com',
+                target: 'http://test.617076674.cn',
                 changeOrigin : true
             }
         }
