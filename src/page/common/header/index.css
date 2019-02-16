@@ -1,16 +1,10 @@
-/*
-* @Author: Rosen
-* @Date:   2017-05-18 19:30:20
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-05-23 20:03:49
-*/
 /* 通用头部导航 */
 .header .logo{
     position: absolute;
     left: 60px;
-    top: 34px;
+    top: 37px;
     display: block;
-    font-size: 36px;
+    font-size: 30px;
     color: #c60023;
     font-weight: bold;
     text-decoration: none;

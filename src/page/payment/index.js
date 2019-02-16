@@ -1,10 +1,3 @@
-/*
-* @Author: Rosen
-* @Date:   2017-06-10 20:05:19
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-06-10 20:35:47
-*/
-
 'use strict';
 
 require('./index.css');

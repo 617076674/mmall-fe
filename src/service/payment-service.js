@@ -1,10 +1,3 @@
-/*
-* @Author: Rosen
-* @Date:   2017-06-10 20:28:03
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-06-10 20:35:25
-*/
-
 'use strict';
 var _mm = require('util/mm.js');
 

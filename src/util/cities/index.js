@@ -1,10 +1,3 @@
-/*
-* @Author: Rosen
-* @Date:   2017-06-08 08:45:41
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-06-08 08:51:07
-*/
-
 'use strict';
 
 var _cities = {

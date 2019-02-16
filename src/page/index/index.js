@@ -1,11 +1,5 @@
-/*
-* @Author: Rosen
-* @Date:   2017-05-08 15:19:12
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-03-24 09:30:00
-*/
-
 'use strict';
+
 require('./index.css');
 require('page/common/nav/index.js');
 require('page/common/header/index.js');

@@ -1,9 +1,3 @@
-/*
-* @Author: Rosen
-* @Date:   2017-05-08 15:28:19
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-03-24 09:45:59
-*/
 var webpack             = require('webpack');
 var ExtractTextPlugin   = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin   = require('html-webpack-plugin');
@@ -99,7 +93,7 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('user-center-update', '修改个人信息')),
         new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', '修改密码')),
         new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
-        new HtmlWebpackPlugin(getHtmlConfig('about', '关于MMall')),
+        new HtmlWebpackPlugin(getHtmlConfig('about', '关于617076674')),
     ],
     devServer: {
         port: 8080,
